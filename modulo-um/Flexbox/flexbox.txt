@@ -1,0 +1,19 @@
+Constituido sempre por dois elementos, o elemento pai e o elemento filho
+	
+	display: flex - faz com que os elementos filhos, dentro do elemento pai, fiquem em linha, e 
+ocupnaodo o maximo do espaço. 
+		- Inicializa o conteiner, agrupa o elementos filho, e organiza de forma que respeitem o 
+		espaço do outro - otimo para menus 
+	
+-----------------------------------------------------------------------------------------------------
+
+	flex-direction: estabele eixo principal definindo assim a direção que os flexs itens são 
+	colocados no flex container.
+
+		row(padrão): direção do texto, esquerda para direita.
+		row-reverse: sentido oposto a direção do texto
+		column: eixo vertical ordenação de cima para baixo.
+		column-reverse: eixo vertical, ordenação de baixo para cima
+
+	ex: elemento pai - display: flex
+				 flex-dection: row || row-reverse || column || column-reverse 		

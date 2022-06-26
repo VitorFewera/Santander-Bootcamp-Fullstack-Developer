@@ -1,0 +1,69 @@
+echo > "nome arquivo" - cria arquivo
+---------------------------------------------------------------------------------------------------------
+- Comando para gerar um chave SSH 
+ssh-keygen -t ed 25519 -c "email"
+
+- vai ser gerada 2 chaves uma privada e uma publica, no caminho especificado no CMD
+
+- navegar até a pasta para encontrar as duas pastas. O endereço eu posso escolher ou seguir o que o
+git bash orienta.
+
+- Para abrir a chave e possivel usar o comando CAT como: cat "nome da chave"
+
+- Quando formos abrir uma chave no GitHub, temos que usar a chave publica, 
+Usando esse comando é gerado um codigo para ser usado no GitHub - settings - keys ssh - new key 
+
+- Comando para usar o ssh engine - Ela é responsavel por pegar as chaves e lidar com elas
+	eval $(ssh-agent) -s
+	
+	Esse comando faz rodar o processo, agr comando para entregar a chave ao processo
+	Dentro da pasta onde está as chaves SSH:
+		ssh-add "chave privada"
+
+-----------------------------------------------------------------------------------------------------
+
+- Comando para clonar um repositório no github?
+git clone "link de ssh pego no github"
+
+-----------------------------------------------------------------------------------------------------
+- Criar um token de acesso
+	user - settings - developer settings - new personal acess token
+-----------------------------------------------------------------------------------------------------
+
+- Comandos git
+	- git init - Inicia o processo do git
+	 
+	Informar email do autor:
+	- git config --global user.email "email do git" - e depois
+	  git config --global user.name "apelido" - configuração inicial do git 
+		
+	- git add - adiciona o arquivo para que possa ser commitado e subir ao git, sendo porssivel usar
+				- git add nomeArquivo - para adicionar o arquivo em questao
+				- git add * - para adicionar tudo o que esta na pasta no commit 
+	- git commit - ex: git commit -m "nome do commit"
+	- git status - ve o status do repositório de trabalho
+ 	- git config --list - listar as configurações do github
+	- git config --global -- unset "propriedade da config" - alterar alguma propriedade da configuração
+	- git remote add origin - passar o local de origem para o repositorio
+	- git remote -v - verifica o local de origem adicionado
+	- git push "nome da origem, ex: origin2" master - para empurar os arquivos para o repositório
+	- git pull nomeOrigem
+	- git clone linkdogithub - clona e baixa o codigo do github
+
+--------------------------------------------------------------------------------------------------------
+
+- Subir um arquivo para o GitHub
+	
+	- Entrar no GitHub
+	- Localizar a parte de repositórios e/ou criar um new Repositório
+	- colocar os dados do repositório, nome descrição e tudo mais
+	- Se tiver um README criado, não precisa marcar a opção de criar um
+	- Pegar o endereço do repositorio em https
+	- entrar no gitBash, e usar o git mote add origin linkGitHubHTTPS para adicionar uma origem 
+	- USar o git remote -v para dar uma olhada, para ver se esta certo 
+	- USar o git push nome-origem master para empurrar os arquivos certos 
+
+---------------------------------------------------------------------------------------------------------
+	
+	
+
