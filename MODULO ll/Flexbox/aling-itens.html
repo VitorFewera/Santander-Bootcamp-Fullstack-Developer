@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling-itens</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container-c{
+            
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: red;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+    
+        .center{
+            align-items: center;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+
+    <h1>Center</h1><!--Item cresce de acordo com o tamanho no centro-->
+    <section class="container center">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+    </section>
+
+    <h1>strectch</h1><!--Padrão-->
+    <section class="container strectch">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>flex-star</h1><!--alinhamento dos items no inicio-->
+    <section class="container flex-start">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>flex-end</h1><!--alinhamento dos items no final-->
+    <section class="container flex-end">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>baseline</h1><!--alinhamento de acordo com a linha base da tipografia dos itens-->
+    <section class="container baseline">
+        <div class="item"> <br>Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <H3>------------------------------------------------------------------------------------------------------</H3>
+
+    <h1>COLUMNS</h1>
+
+    <h1>Center</h1><!--Item cresce de acordo com o tamanho no centro-->
+    <section class="container container-c center">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+    </section>
+
+    <h1>strectch</h1><!--Padrão-->
+    <section class="container container-c strectch">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>flex-star</h1><!--alinhamento dos items no inicio-->
+    <section class="container container-c flex-start">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>flex-end</h1><!--alinhamento dos items no final-->
+    <section class="container container-c flex-end">
+        <div class="item">Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+    <h1>baseline</h1><!--alinhamento de acordo com a linha base da tipografia dos itens-->
+    <section class="container container-c baseline">
+        <div class="item"> <br>Salve o tricolor paulista</div>
+        <div class="item">Amado clube brasileiro</div>
+        <div class="item">Tu és forte, tu és grande</div>
+        <div class="item">Dentre os grandes és o primeiro</div>
+        <div class="item">Ó tricolor
+            Clube bem amado
+            As tuas glórias
+            Vêm do passado
+            </div>
+    </section>
+
+        <h1>colocar isso no meio da tela</h1>
+    <section class="container center central">
+        <div class="item">
+            Salve o tricolor paulista
+            Amado clube brasileiro
+            Tu és forte, tu és grande
+            Dentre os grandes és o primeiro
+            Tu és forte, tu és grande
+            Dentre os grandes és o primeiro
+            </div>
+    </section>
+   
+</body>
+</html>

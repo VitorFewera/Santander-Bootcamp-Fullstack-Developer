@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling-Content</title>
+    <style>
+        .container{
+            height: 550px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px solid black;
+        }
+
+        .item{
+            background-color: orange;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .strectch{
+            align-content: stretch;
+        }
+        
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>strectch</h1>
+    <div class="container strectch"> <!--Padrão-->
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="container center"> 
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="container flex-start"> 
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container flex-end"> 
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+
+    <h1>space-between</h1>
+    <div class="container space-between"> 
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+
+    <h1>space-around</h1>
+    <div class="container space-around"> 
+        <div class="item">Por que enviar SPAM é algo justificável?
+            Porque os fins justificam os emails</div>
+        <div class="item">Qual o endereço do site do cavalo?
+            www.cavalo pontocom pontocom pontocom</div>
+        <div class="item">Por que o mouse é muito mimado?
+            Porque tudo o que ele quer, o mouse pad</div>
+        <div class="item">Qual doença se pode pegar ao usar notebook?
+            A LAPTOPspirose</div>
+        <div class="item">O que uma impressora falou para a outra?
+            Essa folha aí no chão é sua, ou é impressão minha?</div>
+        <div class="item">O que o Schwarzenegger disse quando instalaram o Windows XP pra ele?
+            Instala o Vista, baby</div>
+        <div class="item">Para qual santo você reza quando esquece a senha?
+            São Login</div>
+    </div>
+</body>
+</html>
